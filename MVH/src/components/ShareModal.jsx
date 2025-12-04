@@ -77,6 +77,7 @@ const ShareModal = ({ isOpen, onClose, betDetails }) => {
                                 </button>
                             </div>
                         </div>
+
                     </motion.div>
                 </>
             )}
