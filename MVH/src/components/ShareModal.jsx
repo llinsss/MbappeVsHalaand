@@ -28,7 +28,7 @@ const ShareModal = ({ isOpen, onClose, betDetails }) => {
                         initial={{ opacity: 0, scale: 0.9, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                        className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-sm z-50 px-4"
+                        className="fixed inset-0 flex items-center justify-center z-50"
                     >
                         <div className="bg-[#121212] border border-white/10 rounded-3xl p-6 shadow-2xl relative overflow-hidden">
                             {/* Confetti/Glow Background */}
@@ -41,7 +41,7 @@ const ShareModal = ({ isOpen, onClose, betDetails }) => {
                                 <X className="w-5 h-5" />
                             </button>
 
-                            <div className="text-center mb-8 pt-4">
+                            <div className="text-center mb-8 pt-4 relative">
                                 <div className="w-16 h-16 bg-[#00ff88]/20 text-[#00ff88] rounded-full flex items-center justify-center mx-auto mb-4">
                                     <Share2 className="w-8 h-8" />
                                 </div>
@@ -49,6 +49,16 @@ const ShareModal = ({ isOpen, onClose, betDetails }) => {
                                 <p className="text-gray-400 text-sm">
                                     You staked <span className="text-white font-bold">{betDetails?.amount} {betDetails?.currency}</span> on {betDetails?.player}
                                 </p>
+                                {/* Custom message */}
+                                <p className="text-gray-300 text-sm mt-2">
+                                    Just placed a bet on {betDetails?.player} to have more goals than {betDetails?.player === 'HAALAND' ? 'MBAPPE' : 'HAALAND'} by age 30.
+                                </p>
+                                {/* Platform name */}
+                                <p className="text-gray-500 text-xs mt-4">Goal Rush Platform</p>
+                                {/* Watermark */}
+                                <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ opacity: 0.05, fontSize: '4rem', fontWeight: 'bold', color: '#00ff88' }}>
+                                    Goal Rush
+                                </div>
                             </div>
 
                             {/* Share Options */}
@@ -67,6 +77,7 @@ const ShareModal = ({ isOpen, onClose, betDetails }) => {
                                 </button>
                             </div>
                         </div>
+
                     </motion.div>
                 </>
             )}
