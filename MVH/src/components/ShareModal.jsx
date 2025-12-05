@@ -51,7 +51,7 @@ const ShareModal = ({ isOpen, onClose, betDetails }) => {
                                 </p>
                                 {/* Custom message */}
                                 <p className="text-gray-300 text-sm mt-2">
-                                    Just placed a bet on {betDetails?.player} to have more goals than {betDetails?.player?.toLowerCase() === 'haaland' ? 'Mbappe' : 'Haaland'} by age 30.
+                                    Just placed a bet on Haaland to have more goals than {betDetails?.player?.toLowerCase() === 'haaland' ? 'Mbappe' : 'HAALAND'} by age 30.
                                 </p>
                                 {/* Platform name */}
                                 <p className="text-gray-500 text-xs mt-4">Goal Rush Platform</p>
