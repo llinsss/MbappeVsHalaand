@@ -41,9 +41,9 @@ const Timer = () => {
     }, []);
 
     return (
-        <div className="text-center text-gray-400 mb-6">
-            <span className="font-mono">
-                {timeLeft.years}y {timeLeft.months}mo {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s left
+        <div className="text-center text-white font-mono text-2xl font-bold mb-2">
+            <span>
+                {timeLeft.years}y {timeLeft.months}mo {timeLeft.days}d {timeLeft.minutes}m {timeLeft.seconds}s left
             </span>
         </div>
     );
