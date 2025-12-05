@@ -3,7 +3,7 @@ import FaceOff from './components/FaceOff';
 import BettingCard from './components/BettingCard';
 import ShareModal from './components/ShareModal';
 
-import Timer from './components/Timer';
+
 
 import Navbar from './components/Navbar';
 function App() {
@@ -25,10 +25,10 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[var(--color-bg-primary)] text-white overflow-x-hidden font-sans selection:bg-[#00ff88] selection:text-black">
+    <div className="flex flex-col h-screen bg-[var(--color-bg-primary)] text-white overflow-x-hidden font-sans selection:bg-[#00ff88] selection:text-black">
       <Navbar />
-      <Timer />
-      <main className="flex flex-col items-center justify-center min-h-screen px-4 py-8">
+
+      <main className="flex flex-col items-center justify-center flex-1 px-4 py-8">
 
         {/* Header */}
         <header className="text-center mb-10">
