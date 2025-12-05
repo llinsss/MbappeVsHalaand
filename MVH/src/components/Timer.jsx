@@ -12,13 +12,13 @@ const Timer = () => {
     const calculateRemaining = () => {
         const now = new Date();
         const diff = targetDate - now;
-        if (diff <= 0) return { years: 0, months: 0, days: 0, hours: 0, minutes: 0, seconds: 0 };
+        if (diff <= 0) return { years: 0, months: 0, days: 0, minutes: 0, seconds: 0 };
         const msInSecond = 1000;
         const msInMinute = msInSecond * 60;
         const msInHour = msInMinute * 60;
         const msInDay = msInHour * 24;
-        const msInMonth = msInDay * 30; // approximate month as 30 days
-        const msInYear = msInDay * 365; // approximate year as 365 days
+        const msInMonth = msInDay * 30; // approx
+        const msInYear = msInDay * 365; // approx
 
         const years = Math.floor(diff / msInYear);
         const remainderAfterYears = diff % msInYear;
@@ -26,11 +26,9 @@ const Timer = () => {
         const remainderAfterMonths = remainderAfterYears % msInMonth;
         const days = Math.floor(remainderAfterMonths / msInDay);
         const remainderAfterDays = remainderAfterMonths % msInDay;
-        const hours = Math.floor(remainderAfterDays / msInHour);
-        const remainderAfterHours = remainderAfterDays % msInHour;
-        const minutes = Math.floor(remainderAfterHours / msInMinute);
-        const seconds = Math.floor((remainderAfterHours % msInMinute) / msInSecond);
-        return { years, months, days, hours, minutes, seconds };
+        const minutes = Math.floor(remainderAfterDays / msInMinute);
+        const seconds = Math.floor((remainderAfterDays % msInMinute) / msInSecond);
+        return { years, months, days, minutes, seconds };
     };
 
     const [timeLeft, setTimeLeft] = useState(calculateRemaining());
