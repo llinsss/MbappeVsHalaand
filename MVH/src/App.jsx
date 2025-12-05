@@ -3,12 +3,9 @@ import FaceOff from './components/FaceOff';
 import BettingCard from './components/BettingCard';
 import ShareModal from './components/ShareModal';
 
+import Timer from './components/Timer';
+
 import Navbar from './components/Navbar';
-
-// Placeholder image if generation fails or is loading
-// Placeholder image import removed
-
-
 function App() {
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const [lastBet, setLastBet] = useState(null);
@@ -30,6 +27,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[var(--color-bg-primary)] text-white overflow-x-hidden font-sans selection:bg-[#00ff88] selection:text-black">
       <Navbar />
+      <Timer />
       <main className="flex flex-col items-center justify-center min-h-screen px-4 py-8">
 
         {/* Header */}
