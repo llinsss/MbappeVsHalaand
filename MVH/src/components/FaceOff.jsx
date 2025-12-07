@@ -31,8 +31,14 @@ const FaceOff = ({ imagePath }) => {
                             <p className="text-gray-400 text-sm">Striker</p>
                         </div>
 
-                        <div className="w-12 h-12 bg-[#00ff88] text-black font-black flex items-center justify-center rounded-full text-xl shadow-lg">
-                            <span>VS</span>
+                        <div className="flex flex-col items-center z-20 mx-4">
+                            <div className="mb-4">
+                                <div className="w-12 h-12 bg-[#00ff88] text-black font-black flex items-center justify-center rounded-full text-xl shadow-[0_0_20px_rgba(0,255,136,0.5)] mx-auto">
+                                    <span>VS</span>
+                                </div>
+                            </div>
+                            <Timer />
+                            <p className="text-[#00ff88]/80 text-xs font-mono mt-2 tracking-widest uppercase">Time Remaining</p>
                         </div>
 
                         <div className="text-left">
