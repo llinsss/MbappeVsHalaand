@@ -53,7 +53,7 @@ const Timer = () => {
     // calculateRemaining returns { years, months, days, minutes, seconds }.
 
     return (
-        <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3">
+        <div className="flex items-center justify-center gap-3">
             <div className="flex flex-col items-center bg-black/40 backdrop-blur-md border border-[#00ff88]/30 rounded-xl p-2 min-w-[50px] md:min-w-[60px]">
                 <span className="text-xl md:text-2xl font-bold text-white leading-none">{timeLeft.years}</span>
                 <span className="text-[10px] md:text-xs text-[#00ff88] font-bold tracking-wider mt-1">YRS</span>
