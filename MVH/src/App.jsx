@@ -28,28 +28,20 @@ function App() {
     <div className="flex flex-col h-screen bg-[var(--color-bg-primary)] text-white overflow-x-hidden font-sans selection:bg-[#00ff88] selection:text-black">
       <Navbar />
 
-      <main className="flex flex-col items-center justify-center flex-1 px-4 py-8">
+      <main className="flex flex-col items-center justify-center flex-1 px-4 py-2">
 
-        {/* Header */}
-        <header className="text-center mb-10">
-          <h1 className="text-4xl md:text-6xl font-black mb-2 text-white tracking-tight">
-            GOAL RUSH
-          </h1>
-          <p className="text-gray-400 text-sm md:text-base font-medium">
-            The Ultimate Face-Off
-          </p>
-        </header>
+
 
         {/* Hero Section */}
         <FaceOff imagePath={heroImage} />
 
         {/* Betting Section */}
-        <div className="relative z-20">
+        <div className="relative z-20 -mt-20">
           <BettingCard onPlaceBet={handlePlaceBet} />
         </div>
 
         {/* Footer / Trust Indicators */}
-        <div className="mt-12 text-center text-gray-500 text-xs">
+        <div className="mt-6 text-center text-gray-500 text-xs">
           <p className="mb-2">Secure Crypto Staking • Instant Payouts • Verified Stats</p>
           <p>© 2025 Goal Rush Platform</p>
         </div>
