@@ -53,28 +53,28 @@ const Timer = () => {
     // calculateRemaining returns { years, months, days, minutes, seconds }.
 
     return (
-        <div className="flex items-center justify-center gap-3">
-            <div className="flex flex-col items-center bg-black/40 backdrop-blur-md border border-[#00ff88]/30 rounded-xl p-2 min-w-[50px] md:min-w-[60px]">
-                <span className="text-xl md:text-2xl font-bold text-white leading-none">{timeLeft.years}</span>
-                <span className="text-[10px] md:text-xs text-[#00ff88] font-bold tracking-wider mt-1">YRS</span>
+        <div className="flex items-center justify-center gap-1.5 sm:gap-2 md:gap-3">
+            <div className="flex flex-col items-center bg-black/40 backdrop-blur-md border border-[#00ff88]/30 rounded-xl p-1.5 sm:p-2 min-w-[45px] sm:min-w-[50px] md:min-w-[60px]">
+                <span className="text-lg sm:text-xl md:text-2xl font-bold text-white leading-none">{timeLeft.years}</span>
+                <span className="text-[9px] sm:text-[10px] md:text-xs text-[#00ff88] font-bold tracking-wider mt-1">YRS</span>
             </div>
-            <div className="flex flex-col items-center bg-black/40 backdrop-blur-md border border-[#00ff88]/30 rounded-xl p-2 min-w-[50px] md:min-w-[60px]">
-                <span className="text-xl md:text-2xl font-bold text-white leading-none">{timeLeft.months}</span>
-                <span className="text-[10px] md:text-xs text-[#00ff88] font-bold tracking-wider mt-1">MOS</span>
+            <div className="flex flex-col items-center bg-black/40 backdrop-blur-md border border-[#00ff88]/30 rounded-xl p-1.5 sm:p-2 min-w-[45px] sm:min-w-[50px] md:min-w-[60px]">
+                <span className="text-lg sm:text-xl md:text-2xl font-bold text-white leading-none">{timeLeft.months}</span>
+                <span className="text-[9px] sm:text-[10px] md:text-xs text-[#00ff88] font-bold tracking-wider mt-1">MOS</span>
             </div>
-            <div className="flex flex-col items-center bg-black/40 backdrop-blur-md border border-[#00ff88]/30 rounded-xl p-2 min-w-[50px] md:min-w-[60px]">
-                <span className="text-xl md:text-2xl font-bold text-white leading-none">{timeLeft.days}</span>
-                <span className="text-[10px] md:text-xs text-[#00ff88] font-bold tracking-wider mt-1">DAY</span>
+            <div className="flex flex-col items-center bg-black/40 backdrop-blur-md border border-[#00ff88]/30 rounded-xl p-1.5 sm:p-2 min-w-[45px] sm:min-w-[50px] md:min-w-[60px]">
+                <span className="text-lg sm:text-xl md:text-2xl font-bold text-white leading-none">{timeLeft.days}</span>
+                <span className="text-[9px] sm:text-[10px] md:text-xs text-[#00ff88] font-bold tracking-wider mt-1">DAY</span>
             </div>
             {/* Divider or generic separator could go here but let's just group them */}
 
-            <div className="flex flex-col items-center bg-black/40 backdrop-blur-md border border-[#00ff88]/30 rounded-xl p-2 min-w-[50px] md:min-w-[60px]">
-                <span className="text-xl md:text-2xl font-bold text-white leading-none">{timeLeft.minutes}</span>
-                <span className="text-[10px] md:text-xs text-[#00ff88] font-bold tracking-wider mt-1">MIN</span>
+            <div className="flex flex-col items-center bg-black/40 backdrop-blur-md border border-[#00ff88]/30 rounded-xl p-1.5 sm:p-2 min-w-[45px] sm:min-w-[50px] md:min-w-[60px]">
+                <span className="text-lg sm:text-xl md:text-2xl font-bold text-white leading-none">{timeLeft.minutes}</span>
+                <span className="text-[9px] sm:text-[10px] md:text-xs text-[#00ff88] font-bold tracking-wider mt-1">MIN</span>
             </div>
-            <div className="flex flex-col items-center bg-black/40 backdrop-blur-md border border-[#00ff88]/30 rounded-xl p-2 min-w-[50px] md:min-w-[60px]">
-                <span className="text-xl md:text-2xl font-bold text-white leading-none">{timeLeft.seconds}</span>
-                <span className="text-[10px] md:text-xs text-[#00ff88] font-bold tracking-wider mt-1">SEC</span>
+            <div className="flex flex-col items-center bg-black/40 backdrop-blur-md border border-[#00ff88]/30 rounded-xl p-1.5 sm:p-2 min-w-[45px] sm:min-w-[50px] md:min-w-[60px]">
+                <span className="text-lg sm:text-xl md:text-2xl font-bold text-white leading-none">{timeLeft.seconds}</span>
+                <span className="text-[9px] sm:text-[10px] md:text-xs text-[#00ff88] font-bold tracking-wider mt-1">SEC</span>
             </div>
         </div>
     );
